@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ui"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN"
+        android:layout_centerHorizontal="true"
+        android:textSize="50dp"
+        android:textAlignment="center"
+        android:layout_marginTop="90dp"
+        android:fontFamily="cursive"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn1"
+        android:layout_below="@id/textinput2"
+        android:layout_centerHorizontal="true"
+        android:text="Forgot Password ?"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/black"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textinput1"
+        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1"
+        android:layout_marginTop="200dp"
+        android:background="#30ffffff"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:hint="User Name"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/ic_baseline_person_24"
+        android:drawablePadding="20dp"
+        app:counterEnabled="true"
+        app:errorEnabled="true"
+        app:errorIconDrawable="@drawable/ic_baseline_error"
+        app:counterMaxLength="15"
+        app:placeholderText="ex:abc707"
+        app:placeholderTextColor="@color/black"
+        android:textColorHint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="18"
+            android:textColorHighlight="#91E6F1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textinput2"
+        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textinput1"
+        android:layout_marginTop="30dp"
+        android:background="#30ffffff"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:hint="Password"
+        android:padding="0dp"
+        app:startIconDrawable="@drawable/ic_baseline_vpn_key_24"
+        android:drawablePadding="20dp"
+        app:counterEnabled="true"
+        app:endIconMode="password_toggle"
+        app:counterMaxLength="15"
+        android:textColorHint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et2"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#D0EF5525"
+        android:layout_below="@id/textinput2"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Sign In"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#D0EF5525"
+        android:text="Sign_Up"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:textColor="@color/white"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="40dp"
+        />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btn1">
+        <ImageView
+            android:id="@+id/imgv1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/gg"
+            android:layout_marginStart="50dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="50dp"/>
+
+        <ImageView
+            android:id="@+id/imgv2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/fb"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"/>
+
+        <ImageView
+            android:id="@+id/imgv3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/tw"
+            android:layout_gravity="right"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In With"
+            android:textColor="@color/black"
+            android:layout_marginTop="150dp"
+            android:layout_gravity="center_horizontal"/>
+    </FrameLayout>
+
+
+
+</RelativeLayout>
